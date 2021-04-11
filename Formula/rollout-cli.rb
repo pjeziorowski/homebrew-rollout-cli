@@ -5,24 +5,24 @@
 class RolloutCli < Formula
   desc "Publish your articles everywhere"
   homepage ""
-  version "0.0.6"
+  version "0.0.7"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/pjeziorowski/rollout/releases/download/v0.0.6/rollout_0.0.6_darwin_amd64.tar.gz"
-    sha256 "5a92a016399fc8dbffccb8a18819f83253da73d443c66c8af98f294426ab7376"
+    url "https://github.com/pjeziorowski/rollout/releases/download/v0.0.7/rollout_0.0.7_darwin_amd64.tar.gz"
+    sha256 "5b072ab226d6f095ceb15272f10f8e66b8847d2f97ca8764e91b8e784fcc983b"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/pjeziorowski/rollout/releases/download/v0.0.6/rollout_0.0.6_darwin_arm64.tar.gz"
-    sha256 "932b7629383a1d959bd2eb0775eefa107b2552d86c50bdcdfa3d9c910d2ddb19"
+    url "https://github.com/pjeziorowski/rollout/releases/download/v0.0.7/rollout_0.0.7_darwin_arm64.tar.gz"
+    sha256 "368e357bf235f18fbbd829bfe333b43f2cb3d8b65a1428db25fd87a1fe5a4858"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/pjeziorowski/rollout/releases/download/v0.0.6/rollout_0.0.6_linux_amd64.tar.gz"
-    sha256 "c0c1edf5c206fe14c63f4ddb1f7c1546c0df4abc32b968d220db0678f3b78779"
+    url "https://github.com/pjeziorowski/rollout/releases/download/v0.0.7/rollout_0.0.7_linux_amd64.tar.gz"
+    sha256 "c614a28d3b65b8cdc5d8d644765469b3712cd0d19e43d2738dfa789f735e90e3"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/pjeziorowski/rollout/releases/download/v0.0.6/rollout_0.0.6_linux_arm64.tar.gz"
-    sha256 "5a07399229d1361784062bd7776fb7def9895465aa9f0dd6c06797215a26da8d"
+    url "https://github.com/pjeziorowski/rollout/releases/download/v0.0.7/rollout_0.0.7_linux_arm64.tar.gz"
+    sha256 "6cde6908081c78855dacca463d1174c395fbe23014602fcf6bb3b0618b8e8d02"
   end
 
   def install
