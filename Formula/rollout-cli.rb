@@ -6,7 +6,6 @@ class RolloutCli < Formula
   desc "Publish your articles everywhere"
   homepage ""
   version "0.0.7"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/pjeziorowski/rollout/releases/download/v0.0.7/rollout_0.0.7_darwin_amd64.tar.gz"
